@@ -12,6 +12,8 @@ function Questions(props) {
         function shuffleAnswer() {
             const answerCorrect = {
                 value: quizEl.correct_answer.replace(/&quot;/g, '"')
+                .replace(/&eacute;/g, 'é')
+                .replace(/&micro;/g, 'µ')
                 .replace(/&#039;/gi,`'`)
                 .replace(/&ouml;/gi, `ö`)
                 .replace(/&amp;/g, `&`),
@@ -22,6 +24,8 @@ function Questions(props) {
             const answerIncorrectArr = quizEl.incorrect_answers.map(option => {
                 return {
                     value: option.replace(/&quot;/g, '"')
+                    .replace(/&eacute;/g, 'é')
+                    .replace(/&micro;/g, 'µ')
                     .replace(/&#039;/gi,`'`)
                     .replace(/&ouml;/gi, `ö`)
                     .replace(/&amp;/g, `&`),
@@ -110,11 +114,11 @@ function Questions(props) {
         return (
           <div className='question' key={quizEl.correct_answer}>
                 <h3>{quizEl.question.replace(/&quot;/g, '"')
-                    .replace(/&#039;/gi,`'`)
-                    .replace(/&ouml;/gi, `ö`)
-                    .replace(/&ldquo;/gi, `“`)
-                    .replace(/&rdquo;/gi, `“`)
-                    .replace(/&amp;/g, `&`)
+                        .replace(/&eacute;/g, 'é')
+                        .replace(/&micro;/g, 'µ')
+                        .replace(/&#039;/gi,`'`)
+                        .replace(/&ouml;/gi, `ö`)
+                        .replace(/&amp;/g, `&`)
                     }
                 </h3>
                 {answerEl}

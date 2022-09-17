@@ -27,18 +27,15 @@ function App() {
 
   return (
     <>
-        <img src={blob2} alt="" className='blob-2'/>
       <main>
+        <img src={blob2} alt="" className='blob-2'/>
         {HasStarted === false && <Start start={start}/>}
         {HasStarted && <Questions
           quizData={quizData}
           start={start}
           playAgain={playAgain}
-        
         />}
-        <div className='img-wraper'>
         <img src={blob1} alt="" className='blob-1'/>
-        </div >
       </main>
     </>
   )

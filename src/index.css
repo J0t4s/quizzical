@@ -7,12 +7,12 @@ html, body {
   font-family: 'Inter', sans-serif;
   color: #293264;
   background-color: #F5F7FB;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 main {
   margin-top: 40px;
-  height: 100vh;
+  /* height: 90vh; */
 }
 
 h2, h3 {
@@ -54,23 +54,18 @@ button {
   border: none;
 }
 
-.img-wrapper {
-  position: relative;
-  bottom: 0;
-}
-
 .blob-1 {
-  position: absolute;
+  position: relative;
   left: -70px;
-  bottom: -100px;
+  bottom: -5px;
   height: 100px;
   width: 221px;
 }
 
 .blob-2 {
-  display: inline-block;
+  display: inline;
   position: absolute;
-  right: -62px;
+  right: -68px;
   top: -100px;
   width: 297px;
   height: 235px;
