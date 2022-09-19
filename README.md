@@ -10,6 +10,7 @@
 - [Open Trivia DB API](https://opentdb.com/api_config.php)
 
 # To be contenued
+- there are some bugs that i need to fix.
 - The code need to be more dry.
 - Add responsiveness.
 - I will implement more features as my knowledge grows
